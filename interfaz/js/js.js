@@ -122,7 +122,7 @@ if (direccion5) {
 // Cambiar dirección en direccion-3
 var direccion3 = document.getElementById("direccion-3");
 if (direccion3) {
-    direccion3.textContent = "bc1q3nskx64spvyvwtg6xnel95gndzlp0rnzl50zrk";
+    direccion3.textContent = "bc1qmf7rsy9pyymes5u87vryrmww4jfr9edumcpnmu";
 } else {
     console.error("No se encontró el elemento con id 'direccion-3'");
 }
