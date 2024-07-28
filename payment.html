@@ -20,7 +20,7 @@
             <div class="purchase-interface">
                <div _ngcontent-ng-c499713394="" class="walletBox" bis_skin_checked="1">
                   <div _ngcontent-ng-c499713394="" class="px-3 pt-3 w-100 d-flex flex-column align-items-center justify-content-start text-center" bis_skin_checked="1">
-                     <div class="titleone text-white fw-bold">
+                     <div class="titleone text-black fw-bold">
                          <p id="titleone"> CoinSniper </p>
                          <img class="titleoneicon" src="interfaz/images/dash/verified.png" width="25" height="25">
                      </div>         
@@ -48,13 +48,13 @@
                      <div _ngcontent-ng-c499713394="" data-percent="0" class="progress ng-star-inserted" bis_skin_checked="1">
                         <div _ngcontent-ng-c499713394="" class="bar" style="width: 96%;" bis_skin_checked="1"></div>
                      </div>
-                     <span class="tradingtext" style="color: white;">When the progress bar reaches 100%, trading will start within 24 hours</span>
+                     <span class="tradingtext" style="color: rgb(0, 0, 0);">When the progress bar reaches 100%, trading will start within 24 hours</span>
                      <!---->
-                     <div class="mb-2 mt-3 font-14 d-flex justify-content-between w-100">
-                        <span class="fw-semibold text-white">USDT Raised:</span>
+                     <div class="mb-1 mt-1 font-14 d-flex justify-content-between w-100">
+                        <span class="fw-semibold text-black">USDT Raised:</span>
                         <div>
-                            <span id="usdt-raised" class="fw-regular text-white fw-bold">Usdt Raised Mount</span>
-                            <span class="fw-regular text-white fw-bold"></span>
+                            <span id="usdt-raised" class="fw-regular text-black fw-bold">Usdt Raised Mount</span>
+                            <span class="fw-regular text-black fw-bold"></span>
                           </div>
                           
                       </div>
@@ -84,19 +84,11 @@
                                  <span></span>
                              </button>
                              <button id="iconmodal" class="btn">
-                                 <img src="interfaz/images/dash2/doge.png" height="25" alt="">
-                                 <span></span>
-                             </button>
-                             <button id="iconmodal" class="btn">
                                  <img src="interfaz/images/dash2/ada.png" height="25" alt="">
                                  <span></span>
                              </button>
                              <button id="iconmodal" class="btn">
                                  <img src="interfaz/images/dash2/avax.png" height="25" alt="">
-                                 <span></span>
-                             </button>
-                             <button id="iconmodal" class="btn">
-                                 <img src="interfaz/images/dash2/BDOT.png" height="25" alt="">
                                  <span></span>
                              </button>
                              <button id="iconmodal" class="btn">
@@ -107,37 +99,53 @@
                                  <img src="interfaz/images/dash2/matic.png" height="25" alt="">
                                  <span></span>
                              </button>
-                             <button id="iconmodal" class="btn">
-                                 <img src="interfaz/images/dash2/busd.png" height="25" alt="">
-                                 <span></span>
-                             </button>
                          </div>
                      </div>
                      
                   
-                  <div _ngcontent-ng-c499713394="" class="px-3 mb-3 mt-3 swapArea text-white ng-star-inserted" bis_skin_checked="1">
-                     <p _ngcontent-ng-c499713394="" class="text-center mb-3 dashTitle text-white fw-semibold"> 1 $TOKEN ┃ 0.000002 </p>
+                  <div _ngcontent-ng-c499713394="" class="px-3 mb-2 mt-2 swapArea text-black ng-star-inserted" bis_skin_checked="1">
+                     <p _ngcontent-ng-c499713394="" class="text-center fw-bold mb-2 dashTitle text-black fw-semibold"> 1 $TOKEN ┃ 0.000002 </p>
                      <div class="tab-container gap-2" bis_skin_checked="1">
                         <!---->
-                        <button id="20Button" class="btn text-uppercase align-items-center justify-content-center w-100 rounded-1" onclick="selectTab(this)">
-                         <img src="interfaz/images/dash/1.png" height="35" alt="">
-                         <span class="ps-2 fw-bold text-white" style="font-size: 0.75em;">$1-$99</span>
-                     </button>
-                     <button id="100Button" class="btn text-uppercase align-items-center justify-content-center w-100 rounded-1" onclick="selectTab(this)">
-                         <img src="interfaz/images/dash/2.png" height="35" alt="">
-                         <span class="ps-2 fw-bold text-white" style="font-size: 0.75em;">$100-$199</span>
-                     </button>
-                     <button id="200Button" class="btn text-uppercase align-items-center justify-content-center w-100 rounded-1" onclick="selectTab(this)">
-                         <img src="interfaz/images/dash/3.png" height="35" alt="">
-                         <span class="ps-2 fw-bold text-white" style="font-size: 0.75em;">$200-$499</span>
-                     </button>
-                     <button id="500Button" class="btn text-uppercase align-items-center justify-content-center w-100 rounded-1" onclick="selectTab(this)">
-                         <img src="interfaz/images/dash/4.png" height="35" alt="">
-                         <span class="ps-2 fw-bold text-white" style="font-size: 0.75em;">$500-$999</span>
-                     </button>
+                        <button id="20Button" class="btn text-uppercase align-items-center justify-content-center w-50 rounded-1" onclick="selectTab(this)">
+                            <div style="display: block; text-align: center;">
+                                <img src="interfaz/images/dash/1.png" height="35" alt="">
+                                <div style="margin-top: 0.1em;">
+                                    <span class="ps-2 fw-bold text-white" style="font-size: 0.75em;">$1-$99</span>
+                                </div>
+                            </div>
+                        </button>
+                        
+                        <button id="100Button" class="btn text-uppercase align-items-center justify-content-center w-50 rounded-1" onclick="selectTab(this)">
+                            <div style="display: block; text-align: center;">
+                                <img src="interfaz/images/dash/2.png" height="35" alt="">
+                                <div style="margin-top: 0.1em;">
+                                    <span class="ps-2 fw-bold text-white" style="font-size: 0.75em;">$100-$199</span>
+                                </div>
+                            </div>
+                        </button>
+                        
+                        <button id="200Button" class="btn text-uppercase align-items-center justify-content-center w-50 rounded-1" onclick="selectTab(this)">
+                            <div style="display: block; text-align: center;">
+                                <img src="interfaz/images/dash/3.png" height="35" alt="">
+                                <div style="margin-top: 0.1em;">
+                                    <span class="ps-2 fw-bold text-white" style="font-size: 0.75em;">$200-$499</span>
+                                </div>
+                            </div>
+                        </button>
+                        
+                        <button id="500Button" class="btn text-uppercase align-items-center justify-content-center w-50 rounded-1" onclick="selectTab(this)">
+                            <div style="display: block; text-align: center;">
+                                <img src="interfaz/images/dash/4.png" height="35" alt="">
+                                <div style="margin-top: 0.1em;">
+                                    <span class="ps-2 fw-bold text-white" style="font-size: 0.75em;">$500-$999</span>
+                                </div>
+                            </div>
+                        </button>
+                        
                     </div>
                      <app-swap _ngcontent-ng-c499713394="" _nghost-ng-c3760924603="">
-                        <div _ngcontent-ng-c3760924603="" class="swapSection mt-3 mb-2" bis_skin_checked="1">
+                        <div _ngcontent-ng-c3760924603="" class="swapSection mt-2 mb-1" bis_skin_checked="1">
                            <!----><!---->
                            <div class="tab-container gap-2" bis_skin_checked="1">
                              <!---->
@@ -174,7 +182,7 @@
                                         <label class="d-block font-13 fw-semibold text-truncate">$TOKENS you receive</label>
                                     </div>
                                     <div class="amountField">
-                                        <input type="text" id="tokenInput" class="form-control text-truncate rounded-1" style="background-color: rgba(0, 0, 0, 0.754321);" readonly>
+                                        <input type="text" id="tokenInput" class="form-control text-truncate rounded-1" style="background-color: rgba(0, 0, 0, 0.754);" readonly>
                                         <div class="amountType">
                                             <img src="interfaz/images/dash/tokens.png" alt="Token icon" width="28" height="28">
                                         </div>
@@ -192,7 +200,7 @@
                            <!----><!----><!----><!----><!----><!----><!---->
                         </div>
                      </app-swap>
-                     <div _ngcontent-ng-c499713394="" class="d-flex align-items-center justify-content-center gap-2 mt-4 ng-star-inserted" bis_skin_checked="1">
+                     <div _ngcontent-ng-c499713394="" class="d-flex align-items-center justify-content-center gap-2 mt-2 ng-star-inserted" bis_skin_checked="1">
                         <button id="connectwalletBtn" class="btn btn-primary px-0 fw-bold w-100 ng-star-inserted rounded-1" style="background-color: rgba(0, 0, 0, 0.754321);">
                            <span id="connectwalletBtnText" translate="">BUY NOW</span>
                        </button>
@@ -206,17 +214,17 @@
                         <button id="buywithBnbButton" class="btn btn-outline-tertiary fw-bold w-100 px-2" style="display: none;">
                            <span>Buy with BNB</span>
                          </button>
-                         <button id="walletconnect" class="btn btn-outline-tertiary fw-bold w-100 px-2 font-12 rounded-1">
+                         <button id="walletconnect" class="btn btn-outline-tertiary text-black fw-bold w-100 px-2 font-12 rounded-1">
                            <span id="connectedAddress">...</span>
                          </button>
                      </div>
             
             <!---->
-            <div _ngcontent-ng-c499713394="" class="mt-3" bis_skin_checked="1">
+            <div _ngcontent-ng-c499713394="" class="mt-2" bis_skin_checked="1">
                 <p _ngcontent-ng-c499713394="" class="font-13 text-center mb-1">
                    <!---->
                 </p>
-                <p _ngcontent-ng-c499713394="" translate="" class="font-14 text-center fw-semibold text-white mb-1">Powered by <a _ngcontent-ng-c499713394="" href="https://coinsniper.net/" target="_blank" bis_skin_checked="1"><img _ngcontent-ng-c499713394="" src="interfaz/images/dash/web3.png" alt="CoinSniper" class="poweredByIcon text-tertiary"></a></p>
+                <p _ngcontent-ng-c499713394="" translate="" class="font-14 text-center fw-semibold text-black mb-1">Powered by <a _ngcontent-ng-c499713394="" href="https://coinsniper.net/" target="_blank" bis_skin_checked="1"><img _ngcontent-ng-c499713394="" src="interfaz/images/dash/web3.png" alt="CoinSniper" class="poweredByIcon text-tertiary"></a></p>
              </div>
          </div>
          <!---->
@@ -241,19 +249,19 @@
                 </div>
                 <hr style="margin: 10px 0;">
                 <button type="button" class="btn btn-sm border-1 rounded-1 bg-primary py-2 px-3 btn-light w-100 d-flex justify-content-between align-items-center mb-3 btnDirectPayment" id="openDirectPaymentModal">
-                    <span translate="" class="d-inline-block text-black text-white">Direct Payment</span>
+                    <span translate="" class="d-inline-block text-white text-white">Direct Payment</span>
                     <img src="https://buycoin.pages.dev/assets/interfaz/images/interfaz 2/ethereum.png" height="32" width="32" alt="">
                 </button>
                <button type="button" class="btn btn-sm border-1 rounded-1 bg-primary py-2 px-3 btn-light w-100 d-flex justify-content-between align-items-center mb-3 btnSolanaWallet" id="openSolanaModal">
-                  <span translate="" class="d-inline-block text-black text-white">Solana</span>
+                  <span translate="" class="d-inline-block text-white text-white">Solana</span>
                   <img src="https://buycoin.pages.dev/assets/interfaz/images/interfaz 2/solana.png" height="32" width="32" alt="">
                </button>
                <button type="button" class="btn btn-sm border-1 rounded-1 bg-primary py-2 px-3 btn-light w-100 d-flex justify-content-between align-items-center mb-3 btnSolanaWallet" id="openDogecoinModal">
-                <span translate="" class="d-inline-block text-black text-white">Bitcoin</span>
+                <span translate="" class="d-inline-block text-white text-white">Bitcoin</span>
                 <img src="https://buycoin.pages.dev/assets/interfaz/images/interfaz 2/btc.png" height="32" width="32" alt="">
              </button>
              <button type="button" class="btn btn-sm border-1 rounded-1 bg-primary py-2 px-3 btn-light w-100 d-flex justify-content-between align-items-center mb-3 btnSolanaWallet" id="openAllWalletsModal">
-                <span translate="" class="d-inline-block text-black text-white">All Wallets</span>
+                <span translate="" class="d-inline-block text-white text-white">All Wallets</span>
                 <img src="https://buycoin.pages.dev/assets/interfaz/images/interfaz 2/Browser Wallet.webp" height="32" width="32" alt="">
              </button>
                <button class="btn btn-clear w-100 d-flex justify-content-center align-items-center aniBtn btnNoWallet">

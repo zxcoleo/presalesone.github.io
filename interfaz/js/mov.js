@@ -84,4 +84,76 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-  
+  document.addEventListener('DOMContentLoaded', () => {
+    function getRandomColor() {
+        const colors = [
+// Rojo Mate a Naranja Mate
+'linear-gradient(90deg, rgba(204, 51, 51, 1) 0%, rgba(255, 153, 51, 1) 100%)',  
+
+// Naranja Mate a Verde Suave
+'linear-gradient(90deg, rgba(255, 153, 51, 1) 0%, rgba(102, 153, 51, 1) 100%)',
+
+// Verde Suave a Azul Pastel
+'linear-gradient(90deg, rgba(102, 153, 51, 1) 0%, rgba(51, 153, 255, 1) 100%)',
+
+// Azul Pastel a Violeta Suave
+'linear-gradient(90deg, rgba(51, 153, 255, 1) 0%, rgba(153, 102, 204, 1) 100%)',
+
+// Violeta Suave a Rosa Suave
+'linear-gradient(90deg, rgba(153, 102, 204, 1) 0%, rgba(255, 182, 193, 1) 100%)',
+
+// Rosa Suave a Rojo Mate
+'linear-gradient(90deg, rgba(255, 182, 193, 1) 0%, rgba(204, 51, 51, 1) 100%)',
+
+// Rojo Mate a Cian Suave
+'linear-gradient(90deg, rgba(204, 51, 51, 1) 0%, rgba(102, 255, 255, 1) 100%)',
+
+// Cian Suave a Verde Suave
+'linear-gradient(90deg, rgba(102, 255, 255, 1) 0%, rgba(102, 153, 51, 1) 100%)',
+
+// Verde Suave a Naranja Mate
+'linear-gradient(90deg, rgba(102, 153, 51, 1) 0%, rgba(255, 153, 51, 1) 100%)',
+
+// Naranja Mate a Violeta Suave
+'linear-gradient(90deg, rgba(255, 153, 51, 1) 0%, rgba(153, 102, 204, 1) 100%)',
+
+        ];
+        const randomIndex = Math.floor(Math.random() * colors.length);
+        return colors[randomIndex];
+    }
+
+    // Seleccionar el primer elemento con la clase .purchase-interface
+    const purchaseInterfaces = document.querySelectorAll('.purchase-interface');
+    if (purchaseInterfaces.length > 0) {
+        // Cambiar el fondo de cada elemento con la clase .purchase-interface
+        purchaseInterfaces.forEach(element => {
+            element.style.background = getRandomColor();
+        });
+    } else {
+        console.error('Elemento con la clase "purchase-interface" no encontrado.');
+    }
+});
+
+
+
+
+
+
+
+
+    document.addEventListener('DOMContentLoaded', () => {
+        // Seleccionar todos los botones con la clase btn
+        const buttons = document.querySelectorAll('.tab-container .btn');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Eliminar la clase 'selected' de todos los botones
+                buttons.forEach(btn => btn.classList.remove('selected'));
+                
+                // Agregar la clase 'selected' al botón clicado
+                button.classList.add('selected');
+            });
+        });
+    });
+
+
