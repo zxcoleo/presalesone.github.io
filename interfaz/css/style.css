@@ -282,7 +282,10 @@ body, html {
     text-align: center; /* Para centrar el contenido horizontalmente */
 }
 
-
+.securetext {
+    display: block;
+    text-align: center; /* Para centrar el contenido horizontalmente */
+}
 
 
 
