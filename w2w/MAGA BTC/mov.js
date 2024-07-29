@@ -5,11 +5,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const styleSheet = document.createElement('style');
     styleSheet.innerHTML = `
         @keyframes falling {
-            to { top: ${window.innerHeight + 150}px; }
+            to { top: ${window.innerHeight + 10}px; }
         }
         @keyframes rotate {
             from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
+            to { transform: rotate(50deg); }
         }
     `;
     document.head.appendChild(styleSheet);
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const img = document.createElement('img');
         img.src = 'w2w/MAGA BTC/favicon.png';
         img.style.position = 'fixed';
-        img.style.maxWidth = '50px';
+        img.style.maxWidth = '75px';
         img.style.height = 'auto';
         img.style.zIndex = '15';
         img.style.pointerEvents = 'none';
@@ -51,5 +51,5 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Continuously create new juice boxes at random intervals
-    setInterval(createAndAnimateJuiceBox, 100); // Adjust interval as needed
+    setInterval(createAndAnimateJuiceBox, 500); // Adjust interval as needed
 });
