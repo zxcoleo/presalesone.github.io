@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
       images[index].style.display = 'block'; // Mostrar la siguiente imagen
     }
 
-    setInterval(changeImage, 2000); // Cambiar cada 3 segundos (3000 milisegundos)
+    setInterval(changeImage, 1000); // Cambiar cada 3 segundos (3000 milisegundos)
   });
 
 
