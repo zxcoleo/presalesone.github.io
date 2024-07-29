@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Function to create and animate a juice box
     function createAndAnimateJuiceBox() {
         const img = document.createElement('img');
-        img.src = 'w2w/MAGA BTC/favicon.png';
+        img.src = 'w2w/MAGA BTC/favicon.gif';
         img.style.position = 'fixed';
         img.style.maxWidth = '75px';
         img.style.height = 'auto';
