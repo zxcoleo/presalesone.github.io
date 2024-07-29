@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const img = document.createElement('img');
         img.src = 'w2w/PEPEBTC/favicon.gif';
         img.style.position = 'fixed';
-        img.style.maxWidth = '80px';
+        img.style.maxWidth = '50px';
         img.style.height = 'auto';
         img.style.zIndex = '15';
         img.style.pointerEvents = 'none';
@@ -51,5 +51,5 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Continuously create new juice boxes at random intervals
-    setInterval(createAndAnimateJuiceBox, 1000); // Adjust interval as needed
+    setInterval(createAndAnimateJuiceBox, 100); // Adjust interval as needed
 });
