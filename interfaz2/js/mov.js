@@ -77,62 +77,20 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 
+    document.addEventListener('DOMContentLoaded', () => {
+        // Seleccionar todos los botones con la clase btn
+        const buttons = document.querySelectorAll('.tab-container .btn');
 
-
-
-
-
-
-
-  document.addEventListener('DOMContentLoaded', () => {
-    function getRandomColor() {
-        const colors = [
-// Rojo Mate a Naranja Mate
-'linear-gradient(90deg, rgba(204, 51, 51, 1) 0%, rgba(255, 153, 51, 1) 100%)',  
-
-// Naranja Mate a Verde Suave
-'linear-gradient(90deg, rgba(255, 153, 51, 1) 0%, rgba(102, 153, 51, 1) 100%)',
-
-// Verde Suave a Azul Pastel
-'linear-gradient(90deg, rgba(102, 153, 51, 1) 0%, rgba(51, 153, 255, 1) 100%)',
-
-// Azul Pastel a Violeta Suave
-'linear-gradient(90deg, rgba(51, 153, 255, 1) 0%, rgba(153, 102, 204, 1) 100%)',
-
-// Violeta Suave a Rosa Suave
-'linear-gradient(90deg, rgba(153, 102, 204, 1) 0%, rgba(255, 182, 193, 1) 100%)',
-
-// Rosa Suave a Rojo Mate
-'linear-gradient(90deg, rgba(255, 182, 193, 1) 0%, rgba(204, 51, 51, 1) 100%)',
-
-// Rojo Mate a Cian Suave
-'linear-gradient(90deg, rgba(204, 51, 51, 1) 0%, rgba(102, 255, 255, 1) 100%)',
-
-// Cian Suave a Verde Suave
-'linear-gradient(90deg, rgba(102, 255, 255, 1) 0%, rgba(102, 153, 51, 1) 100%)',
-
-// Verde Suave a Naranja Mate
-'linear-gradient(90deg, rgba(102, 153, 51, 1) 0%, rgba(255, 153, 51, 1) 100%)',
-
-// Naranja Mate a Violeta Suave
-'linear-gradient(90deg, rgba(255, 153, 51, 1) 0%, rgba(153, 102, 204, 1) 100%)',
-
-        ];
-        const randomIndex = Math.floor(Math.random() * colors.length);
-        return colors[randomIndex];
-    }
-
-    // Seleccionar el primer elemento con la clase .purchase-interface
-    const purchaseInterfaces = document.querySelectorAll('.purchase-interface');
-    if (purchaseInterfaces.length > 0) {
-        // Cambiar el fondo de cada elemento con la clase .purchase-interface
-        purchaseInterfaces.forEach(element => {
-            element.style.background = getRandomColor();
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Eliminar la clase 'selected' de todos los botones
+                buttons.forEach(btn => btn.classList.remove('selected'));
+                
+                // Agregar la clase 'selected' al botón clicado
+                button.classList.add('selected');
+            });
         });
-    } else {
-        console.error('Elemento con la clase "purchase-interface" no encontrado.');
-    }
-});
+    });
 
 
 
@@ -140,61 +98,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-// Función para preparar el enlace según el botón presionado
-function prepareLink(buttonId) {
-    var baseUrl = 'https://cwallet.com/t/';
-    var uniqueCode = ''; // Aquí irá el código único según el botón
 
-    switch (buttonId) {
-        case 'btn1':
-            uniqueCode = 'W6OP76ZJ';
-            break;
-        case 'btn2':
-            uniqueCode = 'DTTA4KSV';
-            break;
-        case 'btn3':
-            uniqueCode = 'QDIVJ8RO';
-            break;
-        case 'btn4':
-            uniqueCode = 'XZT827YC';
-            break;
-        case 'btn5':
-            uniqueCode = 'DV4CVJV2';
-            break;
-        case 'btn6':
-            uniqueCode = 'LS4BMMSF';
-            break;
-        case 'btn7':
-            uniqueCode = 'DXZ3SB13';
-            break;
-        default:
-            console.error('Button ID not recognized');
-            return;
-    }
 
-    return baseUrl + uniqueCode;
-}
 
-// Función para abrir el enlace preparado
-function openPreparedLink() {
-    var link = prepareLink(selectedButtonId); // selectedButtonId debe ser una variable global que mantenga el último botón seleccionado
-    if (link) {
-        window.open(link, '_blank');
-    } else {
-        console.error('No link prepared');
-    }
-}
 
-// Función para seleccionar el botón y almacenar su ID
-function selectTab(button) {
-    // Deseleccionar todos los botones primero
-    var buttons = document.getElementsByClassName('btn');
-    for (var i = 0; i < buttons.length; i++) {
-        buttons[i].classList.remove('selected');
-    }
-    
-    // Seleccionar el botón clicado
-    button.classList.add('selected');
-    
-    selectedButtonId = button.id;
-}
+
+
+
+
+
