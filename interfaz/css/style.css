@@ -285,6 +285,7 @@ body, html {
 .securetext {
     display: block;
     text-align: center; /* Para centrar el contenido horizontalmente */
+    font-size: 10px;
 }
 
 
