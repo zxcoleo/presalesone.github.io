@@ -11,14 +11,13 @@ body, html {
   }
 
   .purchase-interface {
-    background: linear-gradient(90deg, rgb(172, 172, 172) 50%, rgba(160, 115, 160, 0.966) 80%);
+    background: linear-gradient(90deg, rgb(42, 43, 58) 30%, rgba(36, 42, 97, 0.966) 80%);
     border-radius: 20px;
     width: 470px;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    transition: background 1s ease; /* Transición suave para el cambio de fondo */
 }
 
 
