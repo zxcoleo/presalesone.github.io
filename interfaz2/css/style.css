@@ -11,7 +11,7 @@ body, html {
   }
 
   .purchase-interface {
-    background: linear-gradient(90deg, rgb(42, 43, 58) 30%, rgba(36, 42, 97, 0.966) 80%);
+    background: linear-gradient(90deg, rgb(40, 50, 70) 30%, rgb(40, 50, 70) 80%);
     border-radius: 20px;
     width: 470px;
     position: absolute;
@@ -28,11 +28,12 @@ body, html {
 
 /* Estilos de la tarjeta de tiempo */
 .time-card {
+    font-size: 11px;
     display: flex; /* Usar display flex */
     flex-direction: column; /* Apilar los elementos uno encima del otro */
     align-items: center; /* Centrar los elementos horizontalmente */
-    width: 90px;
-    height: 70px;
+    width: 100px;
+    height: 50px;
     background-color: #f0f0f0;
 }
 
